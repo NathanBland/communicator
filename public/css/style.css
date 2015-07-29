@@ -5,7 +5,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 .button{ /* ripped from other things
             Feel free to destory it.
@@ -40,7 +40,6 @@ li{
     margin-bottom: 1rem;
     transition: 1s opacity;
     opacity: 0;
-    align-self: flex-start;
 } 
 .form__loaded {
     opacity: 1;
