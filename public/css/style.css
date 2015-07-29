@@ -5,7 +5,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 .button{ /* ripped from other things
             Feel free to destory it.
@@ -37,9 +37,14 @@ li{
     box-shadow: 0px 0px 5px #B3B3B3; /* #D8D8D8 */
     padding:2rem;
     flex: 0 1 auto;
-    transition: .5s all;
     margin-bottom: 1rem;
+    transition: 1s opacity;
+    opacity: 0;
+    align-self: flex-start;
 } 
+.form__loaded {
+    opacity: 1;
+}
 .form--sign-in label{
     padding-left: 2vw;
 }
@@ -71,14 +76,17 @@ li{
 }
 .account-list {
     flex: 2 1 2;
-    transition: .5s all;
 }
-.account-list > #account-list--accounts {
+#account-list--accounts {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    transition: .5s all;
+    transition: 1.5s opacity;
+}
+.account-list--accounts {
+}
+.account-list--accounts__loaded {
 }
 .account-list--account {
     flex: 0 1 auto;
@@ -88,5 +96,21 @@ li{
     padding-right: 4rem;
     text-align: center;
     background-color: #FBFBFB;
-    box-shadow: 0px 0px 10px #B3B3B3; /* #D8D8D8 */  
+    box-shadow: 0px 0px 10px #B3B3B3; /* #D8D8D8 */
+    opacity: 0;
+    -webkit-transform-origin: 50% 0%;
+    -o-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transform: perspective(350px) rotateX(-90deg);
+    -o-transform: perspective(350px) rotateX(-90deg);
+    transform: perspective(350px) rotateX(-90deg);
+}
+.account-list--account__loaded {
+    opacity: 1;
+    -webkit-transform: perspective(350px) rotateX(0deg);
+    -o-transform: perspective(350px) rotateX(0deg);
+    transform: perspective(350px) rotateX(0deg);
+    -webkit-transition:0.5s linear 0s;
+    -o-transition:0.5s linear 0s;
+    transition:0.5s linear 0s;
 }
