@@ -1,0 +1,92 @@
+body {
+    background-color: #E0E0E0;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.button{ /* ripped from other things
+            Feel free to destory it.
+        */
+    display: block;
+    color: #FFF;
+    border-radius: 1px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    box-shadow: 0px 0px 2px #808080;
+}
+.button__blue {
+    background-color: #33C3F0;
+    border: 1px solid #33C3F0;
+}
+.button__green {
+    background-color: green;
+    border: 1px solid green;
+}
+
+li{
+    list-style:none;    
+}
+.form {
+    background-color: #FBFBFB;
+    position: relative;
+    box-shadow: 0px 0px 5px #B3B3B3; /* #D8D8D8 */
+    padding:2rem;
+    flex: 0 1 auto;
+    transition: .5s all;
+    margin-bottom: 1rem;
+} 
+.form--sign-in label{
+    padding-left: 2vw;
+}
+.form--button-container {
+    margin-top: 1rem;
+}
+.form--header{
+    color:white;
+    text-align:center;
+    padding: 1.1rem;
+    box-shadow: 0px 1px 5px #f6f6f6;
+    margin-bottom: 2rem;
+    margin-top:-2rem;
+    margin-right: -2rem;
+    margin-left: -2rem;
+}
+.form--create--header {
+    background-color: rgba(0, 120, 255, 0.54);
+}
+.form--create--button{
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.form--create{
+    opacity:0;
+    visibility: hidden;
+}
+.account-list {
+    flex: 2 1 2;
+    transition: .5s all;
+}
+.account-list > #account-list--accounts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: .5s all;
+}
+.account-list--account {
+    flex: 0 1 auto;
+    margin: .5rem;
+    padding: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    text-align: center;
+    background-color: #FBFBFB;
+    box-shadow: 0px 0px 10px #B3B3B3; /* #D8D8D8 */  
+}

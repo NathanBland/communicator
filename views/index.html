@@ -1,0 +1,27 @@
+{% extends "layout.html" %} 
+
+{% block body %}
+<main>
+	<form id="create-account" class="form">
+        <h1 class="form--header form--create--header">Welcome</h1>
+        <p>If you don't already have an account, please create one</p>
+        <label>Username:
+            <input name="username" type="text" placeholder="JoeSmith">
+        </label>
+        <section class="form--button-container">
+            <button class="button form--create--button button__green">Create</button>
+        </section>
+    </form>
+    <article class="account-list">
+    	<section class="account-list--header">
+    	</section>
+    	<section id="account-list--accounts">
+
+    	</section>
+    </article>
+</main>
+{% endblock %}
+
+{% block scripts %}
+<script src="/js/app.js"></script>
+{% endblock %}
