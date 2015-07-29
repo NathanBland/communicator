@@ -1,0 +1,17 @@
+{
+  "name": "communicator",
+  "version": "1.0.0",
+  "description": "A communications service. No Servers required.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "communication",
+    "mail",
+    "message",
+    "contact"
+  ],
+  "author": "Nathan Bland",
+  "license": "ISC"
+}
